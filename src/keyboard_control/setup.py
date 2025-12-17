@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-        ],
+            'empty_node = keyboard_control.empty_node:main',
+            ],
     },
 )

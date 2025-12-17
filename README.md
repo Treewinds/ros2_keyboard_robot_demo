@@ -10,3 +10,4 @@ Use keyboard input to control a simulated robot in ROS2.
 
 ## Status
 Day 1: project initialized
+Day 2: package created
