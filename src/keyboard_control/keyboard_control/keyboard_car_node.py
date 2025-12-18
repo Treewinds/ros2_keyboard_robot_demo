@@ -1,14 +1,14 @@
 import rclpy
 from rclpy.node import Node
 
-class EmptyNode(Node):
+class KeyboardCarNode(Node):
     def __init__(self):
-        super().__init__('empty_node')
-        self.get_logger().info('Empty node started')
+        super().__init__('keyboard_car_node')
+        self.get_logger().info('KeyboardCar skeleton node started')
 
 def main(args=None):
     rclpy.init(args=args)
-    node = EmptyNode()
+    node = KeyboardCarNode()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
