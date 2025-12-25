@@ -5,7 +5,10 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     gazebo = ExecuteProcess(
-        cmd=['gz', 'sim', '-r', 'diff_drive.sdf'],
+        cmd=[
+            'gz', 'sim', '-r',
+            '/opt/ros/jazzy/share/ros_gz_sim/worlds/diff_drive.sdf'
+        ],
         output='screen'
     )
 
@@ -22,4 +25,3 @@ def generate_launch_description():
         gazebo,
         bridge,
     ])
-
