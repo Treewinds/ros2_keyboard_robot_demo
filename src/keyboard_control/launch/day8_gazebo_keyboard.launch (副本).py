@@ -25,11 +25,14 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
-            '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist'
+            # 注意：这里建议去掉 @，直接用 [ 明确方向：ROS -> Gazebo
+            '/model/simple_car/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist'
+        ],
+        remappings=[
+            ('/model/simple_car/cmd_vel', '/cmd_vel')
         ],
         output='screen'
     )
-
 
     # 4. 你的键盘控制节点
     # 假设你的 Python 脚本在 setup.py 中注册的可执行文件名为 'keyboard_node'

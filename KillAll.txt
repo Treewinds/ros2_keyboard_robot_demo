@@ -1,0 +1,1 @@
+pkill -9 -f ros; pkill -9 -f gz; pkill -9 -f ignition; killall -9 _ros2_daemon; ros2 daemon stop

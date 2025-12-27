@@ -26,6 +26,8 @@ setup(
     entry_points={
         'console_scripts': [
             'keyboard_car = keyboard_control.keyboard_car_node:main',
+            'auto_patrol = keyboard_control.auto_patrol:main',
+            'auto_square_odom = keyboard_control.auto_square_odom:main',
             'empty_node = keyboard_control.empty_node:main',
         ],
     },

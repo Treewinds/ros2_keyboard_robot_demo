@@ -22,3 +22,7 @@ DAY 6: 实现键盘控制小车
 DAY 7: 修改小车的world
 
 DAY 8：bridge和gazebo一起启动，且键盘控制可用
+
+DAY 9: Something or nothing 
+
+Day 10: 简单自动巡航
